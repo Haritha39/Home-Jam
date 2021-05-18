@@ -1,6 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import * as React from 'react';
-// import logo from './logo.svg';
+import logo from '../public/assets/home-jam-logo.png';
+import Img from '../public/assets/Img.png';
+import Img1 from '../public/assets/Img1.png';
+import Img2 from '../public/assets/Img2.png';
+import Img3 from '../public/assets/Img3.png';
+import img4 from '../public/assets/img4.png';
+import img5 from '../public/assets/img5.png';
+import img6 from '../public/assets/img6.png';
+import img7 from '../public/assets/img7.png';
+import IT from '../public/assets/IT.png';
+import us from '../public/assets/us.png';
 import './App.scss';
 
 function App() {
@@ -8,7 +18,7 @@ function App() {
     <div className="banner-block">
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark header">
-          <a className="navbar-brand" href="#"><img src="../public/home-jam-logo.png"/></a>
+          <a className="navbar-brand" href="#"><img src={logo} alt="logo"/></a>
           {/* <button className="btn btn-success ml-auto mr-1">Always Show</button> */}
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span className="navbar-toggler-icon"></span>
@@ -117,7 +127,7 @@ function App() {
       <div>
         <div className="row no-wrap">
           <div className="col-sm-3 col-md-2 each-event">
-            <div className="event-img"><img src="../public/img4.png" alt="logo" /></div>
+            <div><img src={img4} alt="logo"/></div>
             <div className="event-data">
               <p>Folk</p>
               <h4>Benny Dayal</h4>
@@ -129,7 +139,7 @@ function App() {
 
           </div>
           <div className="col-sm-3 col-md-2 each-event">
-            <div className="event-img"><img src="../public/img7.png" alt="logo" /></div>
+            <div className="event-img"><img src={img7} alt="logo" /></div>
             <div className="event-data">
               <p>Bollywood</p>
               <h4>Vijay Yesudas</h4>
@@ -140,7 +150,7 @@ function App() {
             </div>
           </div>
           <div className="col-sm-3 col-md-2 each-event">
-            <div className="event-img"><img src="../public/img6.png" alt="logo" /></div>
+            <div className="event-img"><img src={img6} alt="logo" /></div>
             <div className="event-data">
               <p>Folk</p>
               <h4>Andrea Jeremaih</h4>
@@ -151,7 +161,7 @@ function App() {
             </div>
           </div>
           <div className="col-sm-3 col-md-2 each-event">
-            <div className="event-img"><img src="../public/img5.png" alt="logo" /></div>
+            <div className="event-img"><img src={img5} alt="logo" /></div>
             <div className="event-data">
               <p>Folk</p>
               <h4>Shilpa Rao</h4>
@@ -173,10 +183,10 @@ function App() {
         <div className="row no-wrap">
           <div className="col-sm-4 col-md-3 each-event">
             <div className="review-img-info">
-              <img src="../public/img1.png" alt="logo" className="review-img" />
+              <img src={Img1} alt="logo" className="review-img" />
               <div><h3>Hellen Jummy</h3>
                 <div className="d-flex">
-                  <img src="../public/us.png" alt="logo" />
+                  <img src={us} alt="logo" />
                   <p>PALO ALTO,CA</p>
                 </div>
               </div>
@@ -189,10 +199,10 @@ laoreet adipiscing. </p>
           </div>
           <div className="col-sm-4 col-md-3 each-event">
             <div className="review-img-info">
-              <img src="../public/img2.png" alt="logo" className="review-img" />
+              <img src={Img2} alt="logo" className="review-img" />
               <div><h3>Isaac Oluwatemilorun</h3>
                 <div className="d-flex">
-                  <img src="../public/IT.png" alt="logo" />
+                  <img src={IT} alt="logo" />
                   <p>PALO ALTO,CA</p>
                 </div>
               </div>
@@ -205,10 +215,10 @@ laoreet adipiscing. </p>
           </div>
           <div className="col-sm-4 col-md-3 each-event">
             <div className="review-img-info">
-              <img src="../public/img3.png" alt="logo" className="review-img" />
+              <img src={Img3} alt="logo" className="review-img" />
               <div><h3>Hellen Jummy</h3>
                 <div className="d-flex">
-                  <img src="../public/us.png" alt="logo" />
+                  <img src={us} alt="logo" />
                   <p>PALO ALTO,CA</p>
                 </div>
               </div>
