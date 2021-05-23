@@ -127,7 +127,7 @@ function App() {
       <div>
         <div className="row no-wrap">
           <div className="col-sm-3 col-md-2 each-event">
-            <div><img src={img4} alt="logo"/></div>
+            <div className="event-img"><img src={img4} alt="logo"/></div>
             <div className="event-data">
               <p>Folk</p>
               <h4>Benny Dayal</h4>

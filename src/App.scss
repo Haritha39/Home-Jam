@@ -43,6 +43,12 @@ $border-color-fill: #ffb43e;
 $size: 150px;
 body{
   width: 100%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 
 .header{
@@ -68,7 +74,8 @@ body{
 
 .no-wrap{
   flex-wrap: inherit;
-  // overflow-x: auto;
+  margin-right: 0px;
+  overflow-x: scroll;
 }
 
 .self-center{
@@ -207,31 +214,59 @@ body{
 }
 
 .view-all{
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
-  
-  display: flex;
-  align-items: center;
-  text-align: right;
-  
-  color: #E5C558;
+  font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+display: flex;
+align-items: center;
+text-align: right;
+
+color: #E5C558;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 10px;
 }
 
 
 .each-event{
-  height: 254px;
+  height: 350px;
   margin: 50px;
-  border: 1px solid white;
-  left: 80px;
+  border: 1px solid #111229;
+  background-color: #111229;
+  // min-width: fit-content;
+}
+
+@media (max-width: 1400px) {
+  .each-event{
+    min-width: fit-content;
+  }
+}
+@media (max-width: 762px) {
+  .banner-block{
+    min-width: fit-content;
+  }
+  .home-block{
+    min-width: fit-content;
+  }
+}
+
+@media (max-height: 700px) {
+  body{
+    background-color: #0A0B1A;
+  }
 }
 
 .event-img{
-  width: 100%;
-  height: 140px;
+  overflow-x: auto;
 }
 
 .event-data{
@@ -250,6 +285,7 @@ body{
   display: flex;
   flex-direction: row;
   color: #ffffff;
+  padding-top: 40px;
 
   .review-img{
     border-radius: 50px;
@@ -260,4 +296,5 @@ body{
   height: 170px;
   color: #ffffff;
   margin: 30px;
+  padding-top: 50px;
 }
